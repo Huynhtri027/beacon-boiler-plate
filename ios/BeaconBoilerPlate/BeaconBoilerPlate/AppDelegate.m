@@ -25,7 +25,7 @@
     // ** user Password : Password delivred by the Connecthings staff
     // ** user Compagny : ....
     // ** beaconUuid : 64bit - UUID beacon number devivred by the Connecthings staff
-    [self initAdtagInstanceWithUrlType:ATUrlTypeDemo userLogin:@"SDK_1" userPassword:@"ydYJJPX1nhKDNASG82Kz" userCompany:@"1" beaconUuid:@"B8DE8D59-EA9A-41E1-870F-9D8A4899E101"];
+    [self initAdtagInstanceWithUrlType:ATUrlTypeDemo userLogin:@"*****" userPassword:@"*******" userCompany:@"*****" beaconUuid:@"******-*****-*****-**********"];
     
     //To add the application to the notification center
     if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
