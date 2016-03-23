@@ -1,6 +1,6 @@
 {
   "name": "ATAnalytics",
-  "version": "2.3.6",
+  "version": "2.3.7",
   "summary": "Library to send logs to the AdtagPlatform",
   "homepage": "http://www.connecthings.com/",
   "authors": {
@@ -11,7 +11,7 @@
   },
   "source": {
     "git": "https://forge.adtag.eu/ConnecthingsSDK/ATAnalytics.git",
-    "tag": "2.3.6"
+    "tag": "2.3.7"
   },
   "source_files": "ATAnalytics.framework/Versions/A/Headers/*.[^m]*",
   "vendored_frameworks": "ATAnalytics.framework",

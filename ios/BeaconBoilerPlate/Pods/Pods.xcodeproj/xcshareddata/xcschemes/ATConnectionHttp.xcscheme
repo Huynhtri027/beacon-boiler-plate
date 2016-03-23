@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9598EE86485E92B514A2C80F'
+               BlueprintIdentifier = '5F852C239DA72B0EE783349A'
                BlueprintName = 'ATConnectionHttp'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libATConnectionHttp.a'>

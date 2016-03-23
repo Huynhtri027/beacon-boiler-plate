@@ -1,6 +1,6 @@
 {
   "name": "ATLocationBeacon",
-  "version": "2.3.6",
+  "version": "2.3.7",
   "summary": "Library to detect beacon around and retrieve the content attached to from the Adtag Platform",
   "homepage": "http://www.connecthings.com/",
   "authors": {
@@ -11,7 +11,7 @@
   },
   "source": {
     "git": "https://forge.adtag.eu/ConnecthingsSDK/ATLocationBeacon.git",
-    "tag": "2.3.6"
+    "tag": "2.3.7"
   },
   "source_files": "ATLocationBeacon.framework/Versions/A/Headers/*.[^m]*",
   "vendored_frameworks": "ATLocationBeacon.framework",

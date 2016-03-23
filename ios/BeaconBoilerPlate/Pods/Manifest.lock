@@ -1,41 +1,41 @@
 PODS:
-  - ATAnalytics (2.3.6)
-  - ATConnectionHttp (2.3.6)
-  - ATLocationBeacon (2.3.6)
+  - ATAnalytics (2.3.7)
+  - ATConnectionHttp (2.3.7)
+  - ATLocationBeacon (2.3.7)
 
 DEPENDENCIES:
   - ATAnalytics (from `https://forge.adtag.eu/ConnecthingsSDK/ATAnalytics.git`, tag
-    `2.3.6`)
+    `2.3.7`)
   - ATConnectionHttp (from `https://forge.adtag.eu/ConnecthingsSDK/ATConnectionHttp.git`,
-    tag `2.3.6`)
+    tag `2.3.7`)
   - ATLocationBeacon (from `https://forge.adtag.eu/ConnecthingsSDK/ATLocationBeacon.git`,
-    tag `2.3.6`)
+    tag `2.3.7`)
 
 EXTERNAL SOURCES:
   ATAnalytics:
     :git: https://forge.adtag.eu/ConnecthingsSDK/ATAnalytics.git
-    :tag: 2.3.6
+    :tag: 2.3.7
   ATConnectionHttp:
     :git: https://forge.adtag.eu/ConnecthingsSDK/ATConnectionHttp.git
-    :tag: 2.3.6
+    :tag: 2.3.7
   ATLocationBeacon:
     :git: https://forge.adtag.eu/ConnecthingsSDK/ATLocationBeacon.git
-    :tag: 2.3.6
+    :tag: 2.3.7
 
 CHECKOUT OPTIONS:
   ATAnalytics:
     :git: https://forge.adtag.eu/ConnecthingsSDK/ATAnalytics.git
-    :tag: 2.3.6
+    :tag: 2.3.7
   ATConnectionHttp:
     :git: https://forge.adtag.eu/ConnecthingsSDK/ATConnectionHttp.git
-    :tag: 2.3.6
+    :tag: 2.3.7
   ATLocationBeacon:
     :git: https://forge.adtag.eu/ConnecthingsSDK/ATLocationBeacon.git
-    :tag: 2.3.6
+    :tag: 2.3.7
 
 SPEC CHECKSUMS:
-  ATAnalytics: a75c68e2220137a89896e362b84814b5a73b4dc5
-  ATConnectionHttp: 0cec0830552dea19edee1ed9505426bd4606ae83
-  ATLocationBeacon: 3bb8c5f526918c3fc2e2dd108418af004d2f1d1b
+  ATAnalytics: a083b3aa49b8797a38ba5cdffdb15def3d5f6735
+  ATConnectionHttp: 358cfdbe0a4e1eec405522c0e1bb272f35044ca5
+  ATLocationBeacon: 997ed48d0dc72fef000dc13243f9b82400fc9034
 
 COCOAPODS: 0.39.0

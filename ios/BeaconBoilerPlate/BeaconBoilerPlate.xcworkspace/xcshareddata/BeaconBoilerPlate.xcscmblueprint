@@ -5,17 +5,24 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "770A34C1B19B1D08AD9F635C95EFB097570DAF8B" : 0,
-    "D4D1216C5C77613FDF49A9FBC5E8CD3E18B8EF57" : 0
+    "D4D1216C5C77613FDF49A9FBC5E8CD3E18B8EF57" : 0,
+    "21B9D528F67AA5615E4335BA06E6BF4FD0D3C943" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7A3EE2D8-8D29-4525-B94B-0976752A3281",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "770A34C1B19B1D08AD9F635C95EFB097570DAF8B" : "beacon-boiler-plate\/",
-    "D4D1216C5C77613FDF49A9FBC5E8CD3E18B8EF57" : ""
+    "D4D1216C5C77613FDF49A9FBC5E8CD3E18B8EF57" : "",
+    "21B9D528F67AA5615E4335BA06E6BF4FD0D3C943" : "..\/ios-libs"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "BeaconBoilerPlate",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios\/BeaconBoilerPlate\/BeaconBoilerPlate.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "kohlanta:ios-libs",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "21B9D528F67AA5615E4335BA06E6BF4FD0D3C943"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/opsct\/beacon-boiler-plate.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

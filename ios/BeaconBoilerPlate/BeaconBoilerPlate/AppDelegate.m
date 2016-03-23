@@ -25,7 +25,7 @@
     // ** user Password : Password delivred by the Connecthings staff
     // ** user Compagny : ....
     // ** beaconUuid : 64bit - UUID beacon number devivred by the Connecthings staff
-    [self initAdtagInstanceWithUrlType:ATUrlTypeItg userLogin:@"test56-2-2" userPassword:@"ZBy20YpUXuvhgaEQzhft" userCompany:@"organisationrang2ii" beaconUuid:@"B0462602-CBF5-4ABB-87DE-B05340DCCBC1"];
+    [self initAdtagInstanceWithUrlType:ATUrlTypeDemo userLogin:@"SDK_1" userPassword:@"ydYJJPX1nhKDNASG82Kz" userCompany:@"1" beaconUuid:@"B8DE8D59-EA9A-41E1-870F-9D8A4899E101"];
     
     //To add the application to the notification center
     if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
@@ -58,7 +58,6 @@
          ** You can also send Notification information to your BeaconController with the method beyond
          
          [BeaconController load:[adtagBeaconManager getNotificationBeaconContent] redirectType:ATBeaconRedirectTypeNotification from:nil];
-         
          */
         
         UINavigationController *nav = [storyboard instantiateViewControllerWithIdentifier:@"nav"];

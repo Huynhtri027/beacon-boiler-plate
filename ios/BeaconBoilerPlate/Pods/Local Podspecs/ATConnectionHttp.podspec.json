@@ -1,6 +1,6 @@
 {
   "name": "ATConnectionHttp",
-  "version": "2.3.6",
+  "version": "2.3.7",
   "summary": "Library to connect to the various WS of the Adtag Platform",
   "homepage": "http://www.connecthings.com/",
   "authors": {
@@ -11,7 +11,7 @@
   },
   "source": {
     "git": "https://forge.adtag.eu/ConnecthingsSDK/ATConnectionHttp.git",
-    "tag": "2.3.6"
+    "tag": "2.3.7"
   },
   "source_files": "ATConnectionHttp.framework/Versions/A/Headers/*.[^m]*",
   "vendored_frameworks": "ATConnectionHttp.framework",

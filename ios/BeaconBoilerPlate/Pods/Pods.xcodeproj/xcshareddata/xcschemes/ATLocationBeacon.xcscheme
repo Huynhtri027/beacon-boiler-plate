@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C8E4A16283EA5740FD13C46A'
+               BlueprintIdentifier = '47E1228A064D5FD26D6C6048'
                BlueprintName = 'ATLocationBeacon'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libATLocationBeacon.a'>

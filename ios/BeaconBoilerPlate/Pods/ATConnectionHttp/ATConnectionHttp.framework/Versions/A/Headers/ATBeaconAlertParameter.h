@@ -30,6 +30,6 @@
 - (void) actionIsDone:(CLProximity) proximity ;
 - (void) countSameProximityPlusOne ;
 - (void) countSameProximityReset ;
-
+-(CLProximity )getProximity ;
 @end
 

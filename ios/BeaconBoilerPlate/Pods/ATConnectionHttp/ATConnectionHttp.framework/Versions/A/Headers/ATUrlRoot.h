@@ -11,7 +11,7 @@
 
 typedef enum{
     ATUrlTypeLocal,
-    ATUrlTypeAlpha,
+    ATUrlTypeDemo,
     ATUrlTypePreprod,
     ATUrlTypeProd,
     ATUrlTypeItg
