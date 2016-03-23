@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewControllerBeacon.h"
 
 @interface AppDelegate ()
 
@@ -16,30 +17,69 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     // Override point for customization after application launch.
+    
+    // init the adtag platforme with the
+    // ** user Login : Login delivred by the Connecthings staff
+    // ** user Password : Password delivred by the Connecthings staff
+    // ** user Compagny : ....
+    // ** beaconUuid : 64bit - UUID beacon number devivred by the Connecthings staff
+    [self initAdtagInstanceWithUrlType:ATUrlTypeItg userLogin:@"test56-2-2" userPassword:@"ZBy20YpUXuvhgaEQzhft" userCompany:@"organisationrang2ii" beaconUuid:@"B0462602-CBF5-4ABB-87DE-B05340DCCBC1"];
+    
+    //To add the application to the notification center
+    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+    }
+    
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    // if you implement didBeacomeActive you should add a super call
+    // if you don't just remove all the method
+    [super applicationDidBecomeActive:application];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+    
+    if ([UIApplication sharedApplication].applicationState!=UIApplicationStateActive) {
+        // do something when users click on notification
+        UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        ViewControllerBeacon *BeaconController = [storyboard instantiateViewControllerWithIdentifier:@"beaconController"];
+        /*
+         **  You can retreive beaconContent notification with this line of code
+         
+         ATBeaconContent *beaconContent = [adtagBeaconManager getNotificationBeaconContent];
+         
+         ** You can also send Notification information to your BeaconController with the method beyond
+         
+         [BeaconController load:[adtagBeaconManager getNotificationBeaconContent] redirectType:ATBeaconRedirectTypeNotification from:nil];
+         
+         */
+        
+        UINavigationController *nav = [storyboard instantiateViewControllerWithIdentifier:@"nav"];
+        [nav pushViewController:BeaconController animated:YES];
+    }
+}
+-(UILocalNotification *)createNotification:(ATBeaconContent *)_beaconContent {
+    ILog(@"create notification from app delegate");
+    CFUUIDRef uudid = CFUUIDCreate(NULL);
+    NSString *uudidString = (NSString *) CFBridgingRelease(CFUUIDCreateString(NULL, uudid));
+    UILocalNotification *notification = [[UILocalNotification alloc]init];
+    [notification setAlertBody:[_beaconContent getNotificationDescription]];
+    if(SYSTEM_VERSION_GREATER_THAN(@"7.99")){
+        [notification setAlertTitle:[_beaconContent getAlertTitle]];
+    }
+    NSDictionary *infoDict = [NSDictionary dictionaryWithObject:uudidString forKey:@"uuid"];
+    [notification setUserInfo:infoDict];
+    [[UIApplication sharedApplication] presentLocalNotificationNow: notification];
+    
+    return notification;
+}
+
 
 @end

@@ -1,0 +1,1 @@
+../../../../ATConnectionHttp/ATConnectionHttp.framework/Versions/A/Headers/ATBeaconContent.h

@@ -1,0 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/ATAnalytics" "${PODS_ROOT}/ATConnectionHttp" "${PODS_ROOT}/ATLocationBeacon"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ATAnalytics" "${PODS_ROOT}/Headers/Public/ATConnectionHttp" "${PODS_ROOT}/Headers/Public/ATLocationBeacon"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ATAnalytics" -isystem "${PODS_ROOT}/Headers/Public/ATConnectionHttp" -isystem "${PODS_ROOT}/Headers/Public/ATLocationBeacon"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "ATAnalytics" -framework "ATConnectionHttp" -framework "ATLocationBeacon" -framework "Foundation" -framework "SystemConfiguration" -framework "UIKit"
+PODS_ROOT = ${SRCROOT}/Pods

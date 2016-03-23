@@ -1,0 +1,23 @@
+{
+  "name": "ATAnalytics",
+  "version": "2.3.6",
+  "summary": "Library to send logs to the AdtagPlatform",
+  "homepage": "http://www.connecthings.com/",
+  "authors": {
+    "connecthings, Inc": "contact@connecthings.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://forge.adtag.eu/ConnecthingsSDK/ATAnalytics.git",
+    "tag": "2.3.6"
+  },
+  "source_files": "ATAnalytics.framework/Versions/A/Headers/*.[^m]*",
+  "vendored_frameworks": "ATAnalytics.framework",
+  "requires_arc": true,
+  "license": {
+    "type": "Copyright",
+    "text": "Copyright 2015-2016 Connecthings, Inc. All rights reserved.\n"
+  }
+}

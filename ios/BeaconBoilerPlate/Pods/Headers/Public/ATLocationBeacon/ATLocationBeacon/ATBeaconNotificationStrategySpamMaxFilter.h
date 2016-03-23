@@ -1,0 +1,1 @@
+../../../../ATLocationBeacon/ATLocationBeacon.framework/Versions/A/Headers/ATBeaconNotificationStrategySpamMaxFilter.h

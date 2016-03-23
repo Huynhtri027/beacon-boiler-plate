@@ -1,0 +1,28 @@
+{
+  "name": "ATConnectionHttp",
+  "version": "2.3.6",
+  "summary": "Library to connect to the various WS of the Adtag Platform",
+  "homepage": "http://www.connecthings.com/",
+  "authors": {
+    "connecthings, Inc": "contact@connecthings.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://forge.adtag.eu/ConnecthingsSDK/ATConnectionHttp.git",
+    "tag": "2.3.6"
+  },
+  "source_files": "ATConnectionHttp.framework/Versions/A/Headers/*.[^m]*",
+  "vendored_frameworks": "ATConnectionHttp.framework",
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "SystemConfiguration"
+  ],
+  "requires_arc": true,
+  "license": {
+    "type": "Copyright",
+    "text": "Copyright 2015-2016 Connecthings, Inc. All rights reserved.\n"
+  }
+}
