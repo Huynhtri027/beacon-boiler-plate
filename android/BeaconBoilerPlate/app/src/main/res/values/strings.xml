@@ -2,5 +2,5 @@
     <string name="app_name">BeaconBoilerPlate</string>
     <string name="action_settings">Settings</string>
     <string name="tv_waiting_beacon_detection">Waiting for the beacon detection process</string>
-    <string name="tv_beacon_number">%1$s,\n%2$d detected beacon,\n%3$d content(s) attached to the beacon(s) on Adtag downloaded.</string>
+    <string name="tv_beacon_number">%1$s,\n%2$d detected beacon(s),\n%3$d attached content(s)</string>
 </resources>

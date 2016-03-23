@@ -20,7 +20,9 @@ import java.util.List;
 
 public class ActivityBeacon extends AppCompatActivity implements BeaconRange {
 
-    TextView tvBeaconNumber;
+    private TextView tvBeaconNumber;
+    // To get the beaconContent from the notification
+    // private BeaconContent beaconContent = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,15 @@ public class ActivityBeacon extends AppCompatActivity implements BeaconRange {
                         .setAction("Action", null).show();
             }
         });
+        /*
+        To get the beaconContent  from the notification
+        if(getIntent().getExtras() != null){
+            beaconContent = getIntent().getExtras().getParcelable(BEACON_CONTENT);
+            if(beaconContent != null) {
+                ((TextView) findViewById(R.id.beacon_content)).setText(beaconContent.getNotificationTitle());
+            }
+        }
+         */
     }
 
     @Override

@@ -38,7 +38,7 @@ public class ApplicationBeacon extends Application implements BeaconNotification
         //Authorize the SDK to use the bluetooth
         beaconManager.saveBleAccessAuthorize(true);
         //** to display notification on background **
-        beaconManager.updateBeaconNotification(this);
+       // beaconManager.updateBeaconNotification(this);
 
     }
 
