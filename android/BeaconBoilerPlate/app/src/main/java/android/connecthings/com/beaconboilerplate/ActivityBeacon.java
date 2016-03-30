@@ -2,6 +2,8 @@ package android.connecthings.com.beaconboilerplate;
 
 import android.connecthings.adtag.adtagEnum.FEED_STATUS;
 import android.connecthings.adtag.model.sdk.BeaconContent;
+import android.connecthings.util.BLE_STATUS;
+import android.connecthings.util.adtag.beacon.AdtagBeaconManager;
 import android.connecthings.util.adtag.beacon.model.BeaconRange;
 import android.connecthings.util.adtag.beacon.parser.AppleBeacon;
 import android.os.Bundle;
@@ -50,6 +52,18 @@ public class ActivityBeacon extends AppCompatActivity implements BeaconRange {
             }
         }
          */
+    }
+
+    protected void onResume(){
+        super.onResume();
+        AdtagBeaconManager beaconManager = AdtagBeaconManager.getInstance();
+        BLE_STATUS checkStatus = beaconManager.checkBleStatus();
+        //Activate the bluetooth on start automatically
+        if(checkStatus == BLE_STATUS.DISABLED) {
+            if (beaconManager.isBleAccessAuthorize()) {
+                beaconManager.enableBluetooth();
+            }
+        }
     }
 
     @Override
