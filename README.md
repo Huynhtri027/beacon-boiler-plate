@@ -44,4 +44,4 @@ You can now clone and start working with the project!
 
 7. After a few seconds, you should see after few seconds "BACKEND_SUCCESS, 1 detected beacon, 1 attached content(s)"
 
-Awesome! You can now imagine great applications based on beacons!
+Felicitation! You can now imagine great applications based on beacons!
