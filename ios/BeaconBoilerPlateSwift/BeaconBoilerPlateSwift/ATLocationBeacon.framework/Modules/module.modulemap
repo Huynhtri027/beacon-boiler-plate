@@ -1,0 +1,6 @@
+framework module ATLocationBeacon {
+  umbrella header "ATLocationBeacon.h"
+
+  export *
+  module * { export * }
+}
