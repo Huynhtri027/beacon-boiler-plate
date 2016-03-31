@@ -8,7 +8,9 @@
 
 #import "ViewControllerBeacon.h"
 
-@interface ViewControllerBeacon ()
+@interface ViewControllerBeacon (){
+    NSString *feedStatusString ;
+}
 
 @end
 
@@ -38,7 +40,6 @@
  NSLog(@"i got it ");
  }
  */
-
 // Help
 // ** _beacons  : array of beacon detected arround
 //
@@ -49,16 +50,29 @@
 //                        all beacon range information from adtag
 //
 //
-//
-
 -(void)didRangeBeacons:(NSArray *)_beacons beaconContents:(NSArray *)_beaconContents informationStatus:(ATRangeInformationStatus)informationStatus feedStatus:(ATRangeFeedStatus)feedstatus region:(CLRegion *)region{
-    _txt_nbrBeacon.text =[NSString stringWithFormat:NSLocalizedString(@"beaconArround",@""),feedstatus,_beacons.count,_beaconContents.count];
+    
+    feedStatusString=@"";
+    switch(feedstatus){
+        case ATRangeFeedStatusInProgress:
+            feedStatusString = @"IN_PROGRESS";
+            break;
+        case ATRangeFeedStatusBackendError:
+            feedStatusString= @"BACKEND_ERROR";
+            break;
+        case ATRangeFeedStatusNetworkError:
+            feedStatusString = @"NETWORK_ERROR";
+            break;
+        case ATRangeFeedStatusBackendSuccess:
+            feedStatusString = @"BACKEND_SUCESS";
+            break;
+    }
+    _txt_nbrBeacon.text =[NSString stringWithFormat:NSLocalizedString(@"beaconArround", @""),feedStatusString,_beacons.count,_beaconContents.count];
 }
 
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
     //[beaconManager registerAdtagRangeDelegate:nil];
 }
-
 
 @end

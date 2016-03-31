@@ -11,8 +11,6 @@
 #import <ATConnectionHttp/ATConnectionHttp.h>
 
 @interface AppDelegate : ATBeaconAppDelegate <UIApplicationDelegate,ATBeaconNotificationDelegate> {
-
-
 }
 
 @property (strong, nonatomic) UIWindow *window;

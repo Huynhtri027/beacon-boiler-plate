@@ -10,7 +10,6 @@
 #import "ViewControllerBeacon.h"
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
@@ -19,12 +18,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Override point for customization after application launch.
-    
     // init the adtag platforme with the
     // ** user Login : Login delivred by the Connecthings staff
     // ** user Password : Password delivred by the Connecthings staff
     // ** user Compagny : ....
-    // ** beaconUuid : 64bit - UUID beacon number devivred by the Connecthings staff
+    // ** beaconUuid : - UUID beacon number devivred by the Connecthings staff
+//    [self initAdtagInstanceWithUrlType:ATUrlTypeDemo userLogin:@"*****" userPassword:@"*******" userCompany:@"*****" beaconUuid:@"******-*****-*****-**********"];
+
     [self initAdtagInstanceWithUrlType:ATUrlTypeDemo userLogin:@"*****" userPassword:@"*******" userCompany:@"*****" beaconUuid:@"******-*****-*****-**********"];
     
     //To add the application to the notification center
@@ -66,6 +66,7 @@
 }
 -(UILocalNotification *)createNotification:(ATBeaconContent *)_beaconContent {
     ILog(@"create notification from app delegate");
+    //associate uniqueId to the notification will allow us to delete notification if the associated beacon is no more detected
     CFUUIDRef uudid = CFUUIDCreate(NULL);
     NSString *uudidString = (NSString *) CFBridgingRelease(CFUUIDCreateString(NULL, uudid));
     UILocalNotification *notification = [[UILocalNotification alloc]init];
@@ -76,7 +77,6 @@
     NSDictionary *infoDict = [NSDictionary dictionaryWithObject:uudidString forKey:@"uuid"];
     [notification setUserInfo:infoDict];
     [[UIApplication sharedApplication] presentLocalNotificationNow: notification];
-    
     return notification;
 }
 
