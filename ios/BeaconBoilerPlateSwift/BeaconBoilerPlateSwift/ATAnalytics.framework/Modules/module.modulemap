@@ -1,0 +1,6 @@
+framework module ATAnalytics {
+  umbrella header "ATAnalytics.h"
+
+  export *
+  module * { export * }
+}

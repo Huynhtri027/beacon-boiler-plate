@@ -1,1 +1,0 @@
-../../../../ATAnalytics/ATAnalytics.framework/Versions/A/Headers/ATDbLogManager.h

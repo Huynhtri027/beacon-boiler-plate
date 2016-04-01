@@ -1,1 +1,0 @@
-../../../../ATLocationBeacon/ATLocationBeacon.framework/Versions/A/Headers/ATBeaconNotificationStrategyDelegate.h

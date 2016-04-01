@@ -1,1 +1,0 @@
-../../../../ATConnectionHttp/ATConnectionHttp.framework/Versions/A/Headers/ATLogBeacon.h
