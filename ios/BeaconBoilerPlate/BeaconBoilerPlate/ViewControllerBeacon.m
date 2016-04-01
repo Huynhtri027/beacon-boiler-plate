@@ -51,7 +51,6 @@
 //
 //
 -(void)didRangeBeacons:(NSArray *)_beacons beaconContents:(NSArray *)_beaconContents informationStatus:(ATRangeInformationStatus)informationStatus feedStatus:(ATRangeFeedStatus)feedstatus region:(CLRegion *)region{
-    
     feedStatusString=@"";
     switch(feedstatus){
         case ATRangeFeedStatusInProgress:

@@ -30,3 +30,5 @@ project.properties
 .project
 .settings/
 .gradle/
+.DS_Store
+**/..DS_Store
