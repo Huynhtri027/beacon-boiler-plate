@@ -23,13 +23,13 @@ public class ApplicationBeacon extends Application implements BeaconNotification
     private static final String TAG = "ApplicationBeacon";
     private static final int NOTIFICATION_BEACON_ID  =1;
 
-    private static final String UUID = "TheUUIDOfYourBeacon";
+    private static final String UUID = "B0462602-CBF5-4ABB-87DE-B05340DCCBC5";
     private NotificationManager mNotificationManager;
 
     public void onCreate(){
         super.onCreate();
-        AdtagInitializer.initInstance(this).initUrlType(Url.UrlType.DEMO)
-                .initUser("YourLogin", "YourPassword").initCompany("TheCompany");
+        AdtagInitializer.initInstance(this).initUrlType(Url.UrlType.PROD)
+                .initUser("User_cbeacon", "fSKbCEvCDCbYTDlk").initCompany("ccbeacondemo");
         //Initiate the adtagLogManager that manages the way log are sent to the platform
         AdtagLogsManager.initInstance(this, Network.ALL, 200, 1000 * 60 * 2);
         //If youe need more parameter - AdtagLogsManager.initInstance(this, Network.ALL,  50, 1000*60*2);

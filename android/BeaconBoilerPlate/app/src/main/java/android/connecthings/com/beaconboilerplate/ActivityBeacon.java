@@ -20,7 +20,8 @@ import org.altbeacon.beacon.Region;
 
 import java.util.List;
 
-public class ActivityBeacon extends AppCompatActivity implements BeaconRange {
+public class
+ActivityBeacon extends AppCompatActivity implements BeaconRange {
 
     private TextView tvBeaconNumber;
     // To get the beaconContent from the notification
