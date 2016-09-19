@@ -15,9 +15,6 @@
 		1484CE4E1D5B239B00BFAD6E /* beaconRangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484CE4D1D5B239B00BFAD6E /* beaconRangeTests.swift */; };
 		1484CE591D5B239B00BFAD6E /* beaconRangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484CE581D5B239B00BFAD6E /* beaconRangeUITests.swift */; };
 		1484CE701D5B294600BFAD6E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1484CE721D5B294600BFAD6E /* Localizable.strings */; };
-		A5C15ED84CEB646667F9032C /* Pods_beaconRangeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A1D3933061B8949A4DF197 /* Pods_beaconRangeUITests.framework */; };
-		A989A50A7A3F183B7C053F79 /* Pods_beaconRangeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE04247FCE858AD79DDE56A1 /* Pods_beaconRangeTests.framework */; };
-		FC609DA74B3AA9B1C9EC87C5 /* Pods_beaconRange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DF8B0BDB5DF7005AD613B5 /* Pods_beaconRange.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		07DF8B0BDB5DF7005AD613B5 /* Pods_beaconRange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beaconRange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D26F13A2EEF83D3F4C13CC /* Pods-beaconboilerPlate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beaconboilerPlate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beaconboilerPlate/Pods-beaconboilerPlate.debug.xcconfig"; sourceTree = "<group>"; };
 		1484CE351D5B239B00BFAD6E /* beaconboilerPlate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beaconboilerPlate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1484CE381D5B239B00BFAD6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1484CE3A1D5B239B00BFAD6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,14 +52,12 @@
 		1484CE5A1D5B239B00BFAD6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1484CE711D5B294600BFAD6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1484CE731D5B297900BFAD6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		33453D2DB6C2C10B352A9F71 /* Pods-beaconRangeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beaconRangeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-beaconRangeUITests/Pods-beaconRangeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		58A1D3933061B8949A4DF197 /* Pods_beaconRangeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beaconRangeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A227B61CFE4FD3533BF0AEDA /* Pods-beaconRange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beaconRange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beaconRange/Pods-beaconRange.debug.xcconfig"; sourceTree = "<group>"; };
 		AE04247FCE858AD79DDE56A1 /* Pods_beaconRangeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beaconRangeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFE1BD16C6972B5F6B9AE6CB /* Pods-beaconRangeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beaconRangeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beaconRangeUITests/Pods-beaconRangeUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B24C8F410E4F39FD2AD98611 /* Pods-beaconRangeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beaconRangeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beaconRangeTests/Pods-beaconRangeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DFD58E758726677007D1041A /* Pods-beaconRange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beaconRange.release.xcconfig"; path = "Pods/Target Support Files/Pods-beaconRange/Pods-beaconRange.release.xcconfig"; sourceTree = "<group>"; };
-		F41545392C73886ACEE24096 /* Pods-beaconRangeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beaconRangeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-beaconRangeTests/Pods-beaconRangeTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8B9D32B434B37D64F892D49 /* Pods-beaconboilerPlate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beaconboilerPlate.release.xcconfig"; path = "Pods/Target Support Files/Pods-beaconboilerPlate/Pods-beaconboilerPlate.release.xcconfig"; sourceTree = "<group>"; };
+		FC3CD325CC21299ABC1A5D7A /* Pods_beaconboilerPlate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beaconboilerPlate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC609DA74B3AA9B1C9EC87C5 /* Pods_beaconRange.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A989A50A7A3F183B7C053F79 /* Pods_beaconRangeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C15ED84CEB646667F9032C /* Pods_beaconRangeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,10 +144,8 @@
 			children = (
 				A227B61CFE4FD3533BF0AEDA /* Pods-beaconRange.debug.xcconfig */,
 				DFD58E758726677007D1041A /* Pods-beaconRange.release.xcconfig */,
-				B24C8F410E4F39FD2AD98611 /* Pods-beaconRangeTests.debug.xcconfig */,
-				F41545392C73886ACEE24096 /* Pods-beaconRangeTests.release.xcconfig */,
-				AFE1BD16C6972B5F6B9AE6CB /* Pods-beaconRangeUITests.debug.xcconfig */,
-				33453D2DB6C2C10B352A9F71 /* Pods-beaconRangeUITests.release.xcconfig */,
+				12D26F13A2EEF83D3F4C13CC /* Pods-beaconboilerPlate.debug.xcconfig */,
+				F8B9D32B434B37D64F892D49 /* Pods-beaconboilerPlate.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -165,6 +156,7 @@
 				07DF8B0BDB5DF7005AD613B5 /* Pods_beaconRange.framework */,
 				AE04247FCE858AD79DDE56A1 /* Pods_beaconRangeTests.framework */,
 				58A1D3933061B8949A4DF197 /* Pods_beaconRangeUITests.framework */,
+				FC3CD325CC21299ABC1A5D7A /* Pods_beaconboilerPlate.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1484CE5D1D5B239B00BFAD6E /* Build configuration list for PBXNativeTarget "beaconboilerPlate" */;
 			buildPhases = (
+				FB4910460090AE05C026937E /* 📦 Check Pods Manifest.lock */,
 				1484CE311D5B239B00BFAD6E /* Sources */,
 				1484CE321D5B239B00BFAD6E /* Frameworks */,
 				1484CE331D5B239B00BFAD6E /* Resources */,
+				74EEC62FACE3FE9A4DA371DD /* 📦 Embed Pods Frameworks */,
+				85BC2D7FC3919ADD81579EA1 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,13 +232,17 @@
 				TargetAttributes = {
 					1484CE341D5B239B00BFAD6E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3T67HE76NG;
+						LastSwiftMigration = 0800;
 					};
 					1484CE481D5B239B00BFAD6E = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 1484CE341D5B239B00BFAD6E;
 					};
 					1484CE531D5B239B00BFAD6E = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 1484CE341D5B239B00BFAD6E;
 					};
 				};
@@ -295,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74EEC62FACE3FE9A4DA371DD /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beaconboilerPlate/Pods-beaconboilerPlate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85BC2D7FC3919ADD81579EA1 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beaconboilerPlate/Pods-beaconboilerPlate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB4910460090AE05C026937E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1484CE311D5B239B00BFAD6E /* Sources */ = {
@@ -453,74 +500,80 @@
 		};
 		1484CE5E1D5B239B00BFAD6E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A227B61CFE4FD3533BF0AEDA /* Pods-beaconRange.debug.xcconfig */;
+			baseConfigurationReference = 12D26F13A2EEF83D3F4C13CC /* Pods-beaconboilerPlate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3T67HE76NG;
 				INFOPLIST_FILE = beaconRange/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.connecthings.beaconRange;
 				PRODUCT_NAME = beaconboilerPlate;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		1484CE5F1D5B239B00BFAD6E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFD58E758726677007D1041A /* Pods-beaconRange.release.xcconfig */;
+			baseConfigurationReference = F8B9D32B434B37D64F892D49 /* Pods-beaconboilerPlate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3T67HE76NG;
 				INFOPLIST_FILE = beaconRange/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.connecthings.beaconRange;
 				PRODUCT_NAME = beaconboilerPlate;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		1484CE611D5B239B00BFAD6E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B24C8F410E4F39FD2AD98611 /* Pods-beaconRangeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = beaconRangeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.connecthings.beaconRangeTests;
 				PRODUCT_NAME = beaconboilerPlate;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/beaconboilerPlate.app/beaconboilerPlate";
 			};
 			name = Debug;
 		};
 		1484CE621D5B239B00BFAD6E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F41545392C73886ACEE24096 /* Pods-beaconRangeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = beaconRangeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.connecthings.beaconRangeTests;
 				PRODUCT_NAME = beaconboilerPlate;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/beaconboilerPlate.app/beaconboilerPlate";
 			};
 			name = Release;
 		};
 		1484CE641D5B239B00BFAD6E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFE1BD16C6972B5F6B9AE6CB /* Pods-beaconRangeUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = beaconRangeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.connecthings.beaconRangeUITests;
 				PRODUCT_NAME = beaconboilerPlate;
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = beaconRange;
 			};
 			name = Debug;
 		};
 		1484CE651D5B239B00BFAD6E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33453D2DB6C2C10B352A9F71 /* Pods-beaconRangeUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = beaconRangeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.connecthings.beaconRangeUITests;
 				PRODUCT_NAME = beaconboilerPlate;
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = beaconRange;
 			};
 			name = Release;
