@@ -16,7 +16,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import org.altbeacon.beacon.Region;
+import com.connecthings.altbeacon.beacon.Region;
+
 
 import java.util.List;
 
