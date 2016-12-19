@@ -1,9 +1,9 @@
 package android.connecthings.com.beaconboilerplate;
 
 import android.Manifest;
-import android.connecthings.util.BLE_STATUS;
-import android.connecthings.util.EasyIntent;
-import android.connecthings.util.adtag.beacon.AdtagBeaconManager;
+import com.connecthings.util.BLE_STATUS;
+import com.connecthings.util.EasyIntent;
+import com.connecthings.util.adtag.beacon.AdtagBeaconManager;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;

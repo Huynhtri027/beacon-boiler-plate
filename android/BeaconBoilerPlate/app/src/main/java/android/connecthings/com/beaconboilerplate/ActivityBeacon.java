@@ -1,11 +1,11 @@
 package android.connecthings.com.beaconboilerplate;
 
-import android.connecthings.adtag.adtagEnum.FEED_STATUS;
-import android.connecthings.adtag.model.sdk.BeaconContent;
-import android.connecthings.util.BLE_STATUS;
-import android.connecthings.util.adtag.beacon.AdtagBeaconManager;
-import android.connecthings.util.adtag.beacon.model.BeaconRange;
-import android.connecthings.util.adtag.beacon.parser.AppleBeacon;
+import com.connecthings.adtag.adtagEnum.FEED_STATUS;
+import com.connecthings.adtag.model.sdk.BeaconContent;
+import com.connecthings.util.BLE_STATUS;
+import com.connecthings.util.adtag.beacon.AdtagBeaconManager;
+import com.connecthings.util.adtag.beacon.model.BeaconRange;
+import com.connecthings.util.adtag.beacon.parser.AppleBeacon;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,8 +15,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-
-import org.altbeacon.beacon.Region;
 
 import java.util.List;
 
@@ -90,7 +88,7 @@ ActivityBeacon extends AppCompatActivity implements BeaconRange {
     }
 
     @Override
-    public void didRangeBeaconsInRegion(List<AppleBeacon> beacons, List<BeaconContent> beaconContents, Region region, BeaconContent.INFORMATION_STATUS information_status, FEED_STATUS feed_status) {
+    public void didRangeBeacons(List<AppleBeacon> beacons, List<BeaconContent> beaconContents, BeaconContent.INFORMATION_STATUS information_status, FEED_STATUS feed_status) {
         tvBeaconNumber.setText(getString(R.string.tv_beacon_number, feed_status, beacons.size(), beaconContents.size()));
     }
 }
