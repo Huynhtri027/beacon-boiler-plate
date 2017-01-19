@@ -3,14 +3,14 @@ package android.connecthings.com.beaconboilerplate;
 import android.app.Application;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.connecthings.adtag.AdtagInitializer;
-import android.connecthings.adtag.analytics.AdtagLogsManager;
-import android.connecthings.adtag.model.sdk.BeaconContent;
-import android.connecthings.util.Log;
-import android.connecthings.util.adtag.beacon.AdtagBeaconManager;
-import android.connecthings.util.adtag.beacon.model.BeaconNotification;
-import android.connecthings.util.connection.Network;
-import android.connecthings.util.connection.Url;
+import com.connecthings.adtag.AdtagInitializer;
+import com.connecthings.adtag.analytics.AdtagLogsManager;
+import com.connecthings.adtag.model.sdk.BeaconContent;
+import com.connecthings.util.Log;
+import com.connecthings.util.adtag.beacon.AdtagBeaconManager;
+import com.connecthings.util.adtag.beacon.model.BeaconNotification;
+import com.connecthings.util.connection.Network;
+import com.connecthings.util.connection.Url;
 import android.content.Intent;
 import android.media.RingtoneManager;
 import android.support.v4.app.NotificationCompat;
@@ -36,6 +36,9 @@ public class ApplicationBeacon extends Application implements BeaconNotification
         //If youe need more parameter - AdtagLogsManager.initInstance(this, Network.ALL,  50, 1000*60*2);
         //Initiate the beaconManager with the UUID of your beacons company. our beaconManager manage only one beacon Region based on the uuid
         AdtagBeaconManager beaconManager = AdtagBeaconManager.initInstance(this, "**UUID**");
+        //Authorize the SDK to use the bluetooth
+        beaconManager.saveBleAccessAuthorize(true);
+        //** to display notification on background **
         beaconManager.registerBeaconNotificationListener(this);
 
     }
