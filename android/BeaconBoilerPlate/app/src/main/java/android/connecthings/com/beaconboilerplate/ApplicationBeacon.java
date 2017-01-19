@@ -28,8 +28,9 @@ public class ApplicationBeacon extends Application implements BeaconNotification
 
     public void onCreate(){
         super.onCreate();
-        AdtagInitializer.initInstance(this).initUrlType(Url.UrlType.***PLATFOMR***)
-                .initUser("**login**", "***password***").initCompany("***company***");
+
+        AdtagInitializer.initInstance(this).initUrlType(Url.UrlType.PROD)
+                .initUser("**LOGIN**", "**PASSWORD**").initCompany("**COMPANY**");
         //Initiate the adtagLogManager that manages the way log are sent to the platform
         AdtagLogsManager.initInstance(this, Network.ALL, 200, 1000 * 60 * 2);
         //If youe need more parameter - AdtagLogsManager.initInstance(this, Network.ALL,  50, 1000*60*2);
