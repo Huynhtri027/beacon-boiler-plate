@@ -64,21 +64,6 @@
         [nav pushViewController:BeaconController animated:YES];
     }
 }
--(UILocalNotification *)createNotification:(ATBeaconContent *)_beaconContent {
-    ILog(@"create notification from app delegate");
-    //associate uniqueId to the notification will allow us to delete notification if the associated beacon is no more detected
-    CFUUIDRef uudid = CFUUIDCreate(NULL);
-    NSString *uudidString = (NSString *) CFBridgingRelease(CFUUIDCreateString(NULL, uudid));
-    UILocalNotification *notification = [[UILocalNotification alloc]init];
-    [notification setAlertBody:[_beaconContent getNotificationDescription]];
-    if(SYSTEM_VERSION_GREATER_THAN(@"7.99")){
-        [notification setAlertTitle:[_beaconContent getAlertTitle]];
-    }
-    NSDictionary *infoDict = [NSDictionary dictionaryWithObject:uudidString forKey:@"uuid"];
-    [notification setUserInfo:infoDict];
-    [[UIApplication sharedApplication] presentLocalNotificationNow: notification];
-    return notification;
-}
 
 
 @end
