@@ -50,7 +50,7 @@
 //                        all beacon range information from adtag
 //
 //
--(void)didRangeBeacons:(NSArray *)_beacons beaconContents:(NSArray *)_beaconContents informationStatus:(ATRangeInformationStatus)informationStatus feedStatus:(ATRangeFeedStatus)feedstatus region:(CLRegion *)region{
+-(void)didRangeBeacons:(NSArray *)_beacons beaconContents:(NSArray *)_beaconContents informationStatus:(ATRangeInformationStatus)informationStatus feedStatus:(ATRangeFeedStatus)feedstatus{
     feedStatusString=@"";
     switch(feedstatus){
         case ATRangeFeedStatusInProgress:

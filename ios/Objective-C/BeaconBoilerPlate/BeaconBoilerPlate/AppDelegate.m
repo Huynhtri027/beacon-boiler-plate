@@ -23,7 +23,8 @@
     // ** user Password : Password delivred by the Connecthings staff
     // ** user Compagny : ....
     // ** beaconUuid : - UUID beacon number devivred by the Connecthings staff
-    [self initAdtagInstanceWithUrlType:ATUrlTypeDemo userLogin:@"*****" userPassword:@"*******" userCompany:@"*****" beaconUuid:@"******-*****-*****-**********"];
+    NSArray *uuids = @[@"__UUID__"];
+    [self initAdtagInstanceWithUrlType:ATUrlTypeProd userLogin:@"__LOGIN__" userPassword:@"__PSWD__" userCompany:@"__COMPANY__" beaconArrayUuids:uuids];
 
  
     
