@@ -18,7 +18,7 @@ import android.text.TextUtils;
 
 /**
  */
-public class ApplicationBeacon extends Application implements BeaconNotification{
+public class ApplicationBeacon extends Application {
 
     private static final String TAG = "ApplicationBeacon";
     private static final int NOTIFICATION_BEACON_ID  =1;
@@ -38,41 +38,6 @@ public class ApplicationBeacon extends Application implements BeaconNotification
         AdtagBeaconManager beaconManager = AdtagBeaconManager.initInstance(this, "**UUID**");
         //Authorize the SDK to use the bluetooth
         beaconManager.saveBleAccessAuthorize(true);
-        //** to display notification on background **
-        beaconManager.registerBeaconNotificationListener(this);
-
-    }
-
-    public int createNotification(BeaconContent beaconContent) {
-        Log.d(TAG, "create notification");
-        if(TextUtils.isEmpty(beaconContent.getAlertTitle()) || TextUtils.isEmpty(beaconContent.getAlertDescription())){
-            return -1;
-        }
-        //example of notification code
-        if(mNotificationManager==null){
-            mNotificationManager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
-        }
-
-        Intent notifyIntent = new Intent(Intent.ACTION_MAIN);
-        notifyIntent.setClass(getApplicationContext(), ActivityBeacon.class);
-
-        //If never you would like to transmit the beacon associate to the notification to your activity
-        //notifyIntent.putExtra(ActivityBeacon.BEACON_CONTENT, beaconContent);
-        PendingIntent intent = PendingIntent.getActivity(this, 0,
-                notifyIntent,  PendingIntent.FLAG_UPDATE_CURRENT);
-
-        NotificationCompat.Builder mNotificationBuilder = new NotificationCompat.Builder(this);
-        mNotificationBuilder.setContentTitle(beaconContent.getNotificationTitle());
-        mNotificationBuilder.setContentText(beaconContent.getNotificationDescription());
-        mNotificationBuilder.setContentIntent(intent);
-        mNotificationBuilder.setSmallIcon(R.mipmap.ic_launcher);
-        mNotificationBuilder.setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION));
-        mNotificationBuilder.setAutoCancel(true);
-        mNotificationBuilder.setVibrate(new long[]{1000, 1000 ,1000});
-
-        mNotificationManager.notify(NOTIFICATION_BEACON_ID, mNotificationBuilder.build());
-
-        return NOTIFICATION_BEACON_ID;
     }
 
 }
