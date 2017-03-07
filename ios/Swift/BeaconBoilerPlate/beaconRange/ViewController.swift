@@ -20,7 +20,7 @@ class ViewController: UIViewController,ATRangeDelegate {
      *  @param region               specific region when beacon are ranging around.
      */
     @available(iOS 4.0, *)
-    public func didRangeBeacons(_ _beacons: [Any]!, beaconContents: [Any]!, informationStatus: ATRangeInformationStatus, feedStatus: ATRangeFeedStatus, region: CLRegion!) {
+    public func didRangeBeacons(_ _beacons: [Any]!, beaconContents: [Any]!, informationStatus: ATRangeInformationStatus, feedStatus: ATRangeFeedStatus) {
         var feedStatusString: String
         
         
@@ -48,10 +48,8 @@ class ViewController: UIViewController,ATRangeDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
         beaconManager = ATBeaconManager.sharedInstance()
         beaconManager.registerAdtagRangeDelegate(self)
- 
     }
 
     override func didReceiveMemoryWarning() {

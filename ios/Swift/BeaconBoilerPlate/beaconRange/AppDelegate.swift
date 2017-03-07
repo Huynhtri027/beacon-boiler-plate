@@ -15,7 +15,7 @@ import UserNotifications
 
 
 @UIApplicationMain
-class AppDelegate: ATBeaconAppDelegate, UIApplicationDelegate,ATBeaconNotificationDelegate {
+class AppDelegate: ATBeaconAppDelegate, UIApplicationDelegate {
     
     var window: UIWindow?
     
@@ -87,18 +87,6 @@ class AppDelegate: ATBeaconAppDelegate, UIApplicationDelegate,ATBeaconNotificati
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func createNotification(_ _beaconContent: ATBeaconContent!) -> UILocalNotification! {
-        let kLocalNotificationMessage:String! = _beaconContent.getNotificationDescription()
-        let kLocalNotificationAction:String! = _beaconContent.getAlertTitle()
-        let localNotification:UILocalNotification = UILocalNotification()
-        localNotification.alertBody = kLocalNotificationMessage
-        localNotification.alertAction = kLocalNotificationAction
-        print("create notification from app delegate");
-        localNotification.soundName = UILocalNotificationDefaultSoundName
-        UIApplication.shared.scheduleLocalNotification(localNotification)
-        
-        return localNotification;
-    }
     
 }
 

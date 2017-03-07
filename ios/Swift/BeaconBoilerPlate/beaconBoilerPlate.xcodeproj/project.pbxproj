@@ -15,6 +15,7 @@
 		1484CE4E1D5B239B00BFAD6E /* beaconRangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484CE4D1D5B239B00BFAD6E /* beaconRangeTests.swift */; };
 		1484CE591D5B239B00BFAD6E /* beaconRangeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484CE581D5B239B00BFAD6E /* beaconRangeUITests.swift */; };
 		1484CE701D5B294600BFAD6E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1484CE721D5B294600BFAD6E /* Localizable.strings */; };
+		15E785C58E0289C9294202FB /* Pods_beaconboilerPlate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3CD325CC21299ABC1A5D7A /* Pods_beaconboilerPlate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15E785C58E0289C9294202FB /* Pods_beaconboilerPlate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,12 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1484CE5D1D5B239B00BFAD6E /* Build configuration list for PBXNativeTarget "beaconboilerPlate" */;
 			buildPhases = (
-				FB4910460090AE05C026937E /* 📦 Check Pods Manifest.lock */,
+				FB4910460090AE05C026937E /* [CP] Check Pods Manifest.lock */,
 				1484CE311D5B239B00BFAD6E /* Sources */,
 				1484CE321D5B239B00BFAD6E /* Frameworks */,
 				1484CE331D5B239B00BFAD6E /* Resources */,
-				74EEC62FACE3FE9A4DA371DD /* 📦 Embed Pods Frameworks */,
-				85BC2D7FC3919ADD81579EA1 /* 📦 Copy Pods Resources */,
+				74EEC62FACE3FE9A4DA371DD /* [CP] Embed Pods Frameworks */,
+				85BC2D7FC3919ADD81579EA1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,7 +249,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1484CE301D5B239B00BFAD6E /* Build configuration list for PBXProject "beaconboilerPlate" */;
+			buildConfigurationList = 1484CE301D5B239B00BFAD6E /* Build configuration list for PBXProject "beaconBoilerPlate" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -296,14 +298,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		74EEC62FACE3FE9A4DA371DD /* 📦 Embed Pods Frameworks */ = {
+		74EEC62FACE3FE9A4DA371DD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,14 +313,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beaconboilerPlate/Pods-beaconboilerPlate-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		85BC2D7FC3919ADD81579EA1 /* 📦 Copy Pods Resources */ = {
+		85BC2D7FC3919ADD81579EA1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,19 +328,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beaconboilerPlate/Pods-beaconboilerPlate-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FB4910460090AE05C026937E /* 📦 Check Pods Manifest.lock */ = {
+		FB4910460090AE05C026937E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -581,7 +583,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1484CE301D5B239B00BFAD6E /* Build configuration list for PBXProject "beaconboilerPlate" */ = {
+		1484CE301D5B239B00BFAD6E /* Build configuration list for PBXProject "beaconBoilerPlate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1484CE5B1D5B239B00BFAD6E /* Debug */,
